@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul tag</title>
+
+    <style>
+        *,
+        *::after,
+        *::before {
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .header {
+            height: 80px;
+            background: gray;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+        }
+
+        .menu {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dedede;
+            font-size: 60px;
+            font-weight: 600;
+            height: 100vh;
+        }
+
+        .page:nth-child(odd) {
+            background: rgb(100, 82, 85);
+        }
+
+        .menu>li {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu>li>ul {
+            position: absolute;
+            background: gray;
+            width: 300px;
+            top: 80px;
+            display: none;
+        }
+
+        .menu>li>ul>li {
+            padding: 15px;
+        }
+
+        .menu>li>ul>li:hover {
+            background: rgb(54, 54, 61);
+        }
+
+        .menu>li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menu">
+            <li>
+                <a href="#home">HOME</a>
+                <ul>
+                    <li>
+                        <a href="#">HOME01</a>
+                    </li>
+                    <li>
+                        <a href="#">HOME02</a>
+                    </li>
+                    <li>
+                        <a href="#">HOME03</a>
+                    </li>
+                    <li>
+                        <a href="#">HOME04</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#about">ABOUT</a>
+                <ul>
+                    <li>
+                        <a href="#">ABOUT01</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT02</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT03</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT04</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#prodrct">PRODUCT</a>
+                <ul>
+                    <li>
+                        <a href="#">PRODUCT01</a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCT02</a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCT03</a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCT04</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contact-us">CONTACT-US</a>
+                <ul>
+                    <li>
+                        <a href="#">CONTACT-US01</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT-US02</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT-US03</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT-US04</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="page" id="home">HOME</div>
+    <div class="page" id="about">ABOUT</div>
+    <div class="page" id="prodrct">PRODUCT</div>
+    <div class="page" id="contact-us">CONTACT-US</div>
+</body>
+
+</html>
