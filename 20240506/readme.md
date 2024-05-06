@@ -205,13 +205,18 @@
 ```
 
 ### HTML屬性
-`<h1 style="color: blue;">Hello World2</h1>`
+
+```html
+<h1 style="color: blue;">Hello World2</h1>
+```
 
 ### 獨立檔案 .css
 
+***推薦使用***
+
 `assets/css/main.css`
 
-```html
+```css
 h1 {
     color: yellow;
     font-size: 60px;
