@@ -53,3 +53,32 @@
     </form>
 </div>
 ```
+
+
+## 檔案
+
+`<input type="file" name="my-pic" />`
+
+- `type="file"` -> 檔案類型。
+- `name` -> 欄位名稱，傳送資料時欄位名稱。
+
+### 檔案傳送條件
+
+- `enctype="multipart/form-data"`
+- `method="POST"`
+
+`file.html`
+
+```html
+<div class="container">
+    <h1>FILE TAG</h1>
+    <form action="https://book.niceinfos.com/api/form/" method="POST" enctype="multipart/form-data">
+        <div>
+            <!-- <label for="">選擇檔案</label> -->
+            <input type="file" id="my-pic" name="my-pic">
+        </div>
+        <input type="hidden" name="inject" value="hello">
+        <button>發送</button>
+    </form>
+</div>
+```
