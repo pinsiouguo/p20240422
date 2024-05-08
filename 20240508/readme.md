@@ -61,3 +61,19 @@ https://caniuse.com/
 
 `height.html`
 
+## 行高
+
+`line-height`
+
+- 可用來做垂直置中，有第二行時破版
+
+```css
+.some {
+    height: 100px;
+    line-height: 100px;
+}
+```
+
+`設定行高時就要盡量避免設定高度`
+
+`height.html`
