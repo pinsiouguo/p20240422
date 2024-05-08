@@ -8,14 +8,14 @@
 - 4xx 表示無法存取 404 422
 - 5xx 主機端爆炸 500 502 504
 
-### 查詢屬性相容性
+## 查詢屬性相容性
 https://caniuse.com/
 
-### 圖片設定規則
+## 圖片設定規則
 
 寬度與高度只能設定其一為固定
 
-### 寬度
+## 寬度
 
 `width`
 
@@ -77,3 +77,14 @@ https://caniuse.com/
 `設定行高時就要盡量避免設定高度`
 
 `height.html`
+
+## 水平對齊
+
+`text-align`
+
+- `left` 靠左，預設值 (start)
+- `center` 置中
+- `right` 靠右 (end)
+- `justify` 平均分散，可避免右側不整齊
+
+`text-align.html`
