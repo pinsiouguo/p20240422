@@ -88,3 +88,30 @@ https://caniuse.com/
 - `justify` 平均分散，可避免右側不整齊
 
 `text-align.html`
+
+## 文字大小
+
+`font-size`
+
+- `px` 固定
+- `em` 百分比，找上一層為被乘數
+- `rem` 百分比，找html為被乘數，通常用於第一層
+
+## 文字顏色
+
+`color`
+
+使用16進制(`#000000` ~ `#FFFFFF`)色碼表示
+
+## 文字樣式
+
+`font-style`
+
+- `normal` 正常，預設值
+- `italic` 斜體
+
+## 字型
+
+`font-family`
+
+https://fonts.google.com/
