@@ -105,3 +105,58 @@
     margin: 10px 20px 30px 40px; /* top 10px, right 20px, bottom 30px, left 40px */
 }
 ```
+
+## 盒子模型
+
+`box-sizing`
+
+- `content-box` 預設，`padding` 與 `border` 會影響整體寬高，容易導致破版。
+- `border-box` `padding`與 `border` 只會擠壓 `content` 寬高，無法擠壓時，才會向外擴散。
+
+參考 `box_model2.html`
+
+## 初始化
+
+`reset.css`
+
+```css
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.slogan {
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+```
+
+### 套件
+[Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+
+全部樣式都初始化
+
+[Normalize.css](https://necolas.github.io/normalize.css/)
+
+有限度的初始化，對第三方套件友善
