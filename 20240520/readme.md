@@ -86,11 +86,15 @@
 
 `position.html`
 
+```html
 <div class="wrap">
     <div class="item relative">R1</div>
     <div class="item absolute">A</div>
     <div class="item relative">R2</div>
 </div>
+```
+
+```css
 .wrap {
     padding: 20px;
     border: 1px solid #505050;
@@ -120,3 +124,29 @@
     z-index: 1; /* 調整數字觀察 */
     opacity: 0.5;
 }
+```
+
+### 移動
+
+- `left`跟`right`一組，不可同時使用
+- `top`跟`bottom`一組，不可同時使用
+- 數值為`數字`加`單位`，例如 `10px`
+- `relative`不參考原點直接移動，基本上只做為參考點，不移動
+- `absolute`移動時會往上一層找原點，原點指的是非`static`，如果都找不到就已`body`為原點
+- `fixed`直接參考`body`為原點，通常都是放在第一層
+
+## 畫臉練習
+
+`face.html`
+
+### 區塊置中顯示公式
+
+```css
+.some {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: calc(50% - 50px); /* width 一半 */
+    top: calc(50% - 25px); /* height 一半 */
+}
+```
