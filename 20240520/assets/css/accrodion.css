@@ -1,7 +1,8 @@
 html,
 body {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -18,11 +19,16 @@ body {
     font-style: normal;
 }
 
-.accrodion-wrap {
+.sub-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .accrodion-wrap {
     margin: 10px auto;
     padding: 10px;
     border: 1px solid #505050;
-}
+} */
 
 .accrodion-wrap .accrodion-item {
     margin-bottom: 5px;
@@ -32,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1a63b6;
+    background: #263642;
     color: #fff;
     padding: 10px;
     font-size: 24px;
@@ -40,11 +46,14 @@ body {
     cursor: pointer;
     user-select: none;
     border-radius: 8px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .accrodion-wrap .accrodion-body {
     padding: 10px;
-    border: 1px solid #1a63b6;
+    border: 1px solid #263642;
     display: none;
 }
 
@@ -67,7 +76,6 @@ body {
 .accrodion-wrap .accrodion-switch:checked~.accrodion-body {
     display: block;
 }
-
 
 .accrodion-wrap .accrodion-switch:checked~.accrodion-header {
     border-bottom-left-radius: 0;
