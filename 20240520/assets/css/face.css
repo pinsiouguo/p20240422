@@ -4,6 +4,7 @@
     background: rgb(255, 163, 88);
     position: relative;
     border-radius: 800px;
+    margin: auto;
 }
 
 .face .eye {
@@ -13,6 +14,8 @@
     background: #ffffff;
     position: absolute;
     top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .face .eye.left {
