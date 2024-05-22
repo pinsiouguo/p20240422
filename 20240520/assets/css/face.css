@@ -4,6 +4,8 @@
     background: rgb(255, 163, 88);
     position: relative;
     border-radius: 800px;
+    /* display: flex;
+    justify-content: center; */
     margin: auto;
 }
 
