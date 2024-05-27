@@ -93,4 +93,10 @@ body {
 .page-content {
     background: rgb(21, 141, 156);
     height: 300px;
+    display: flex;
+    font-size: 2rem;
 }
+
+.left_page {}
+
+.right_page {}
