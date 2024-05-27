@@ -8,7 +8,7 @@ body {
 
 .header {
     position: fixed;
-    top: 0;
+    top: 30px;
     left: 0;
     width: 100%;
     z-index: 9;
@@ -16,8 +16,9 @@ body {
 
 .header-wrap {
     background: #fff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 100px;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -67,7 +68,10 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 #page_01::before {
@@ -78,4 +82,15 @@ body {
     width: 100%;
     height: 100%;
     background: #00000038;
+}
+
+.page-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.page-content {
+    background: rgb(21, 141, 156);
+    height: 300px;
 }
