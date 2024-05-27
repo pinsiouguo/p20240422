@@ -1,12 +1,21 @@
+.face-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
 .face {
     width: 500px;
     height: 500px;
     background: rgb(255, 163, 88);
     position: relative;
     border-radius: 800px;
-    /* display: flex;
-    justify-content: center; */
-    margin: auto;
+    /* margin: auto; */
 }
 
 .face .eye {
