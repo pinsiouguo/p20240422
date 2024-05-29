@@ -102,6 +102,20 @@ body {
     padding: 15px;
 }
 
-.left_page {}
+.page_slogan {
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 20px;
+}
 
-.right_page {}
+.page_slogan::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 150px);
+    width: 0;
+    height: 3px;
+    border-left: 100px solid rgb(18, 82, 141);
+    border-right: 200px solid #fff;
+}
