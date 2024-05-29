@@ -92,15 +92,15 @@ body {
 
 .page-content {
     background: rgba(21, 140, 156, 0.87);
-    height: 300px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
     border-radius: 10px;
 }
 
-.page-content>div {
+/* .page-content>div {
     padding: 15px;
-}
+} */
 
 .page_slogan {
     text-align: center;
@@ -109,7 +109,7 @@ body {
     padding-bottom: 20px;
 }
 
-.page_slogan::after {
+/* .page_slogan::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -118,4 +118,26 @@ body {
     height: 3px;
     border-left: 100px solid rgb(18, 82, 141);
     border-right: 200px solid #fff;
+} */
+
+.page_slogan2 {
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #fff;
+    border-image: linear-gradient(to right, #e7d084 30%, #fff 0%) 1;
+}
+
+.page-content>div {
+    min-height: 300px;
+}
+
+.page-content>div:first-child {
+    border-right: 3px dashed #fff;
+    padding-right: 30px;
+}
+
+.page-content>div:last-child {
+    padding-left: 30px;
 }
