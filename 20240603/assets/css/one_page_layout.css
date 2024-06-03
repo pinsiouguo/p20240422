@@ -90,7 +90,7 @@ body {
     width: 100%;
 }
 
-.page-content {
+#page_01 .page-content {
     background: rgba(21, 140, 156, 0.87);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,7 +98,7 @@ body {
     border-radius: 10px;
 }
 
-/* .page-content>div {
+/* #page_01 .page-content>div {
     padding: 15px;
 } */
 
@@ -120,7 +120,7 @@ body {
     border-right: 200px solid #fff;
 } */
 
-.page_slogan2 {
+.slogan2 {
     text-align: center;
     font-size: 1.5rem;
     position: relative;
@@ -130,21 +130,21 @@ body {
     margin-bottom: 15px;
 }
 
-.page-content>div {
+#page_01 .page-content>div {
     min-height: 300px;
     position: relative;
 }
 
-/* .page-content>div:first-child {
+/* #page_01 .page-content>div:first-child {
     border-right: 3px dashed #fff;
     padding-right: 30px;
 } */
 
-.page-content>div:first-child {
+#page_01 .page-content>div:first-child {
     padding-right: 30px;
 }
 
-.page-content>div:last-child::after {
+#page_01 .page-content>div:last-child::after {
     content: '';
     position: absolute;
     width: 0;
@@ -156,11 +156,11 @@ body {
     border-left: 4px dashed #fff;
 }
 
-.page-content>div:last-child {
+#page_01 .page-content>div:last-child {
     padding-left: 24px;
 }
 
-.page-content .text {
+#page_01 .page-content .text {
     line-height: 30px;
     text-align: justify;
 }
@@ -278,4 +278,12 @@ body {
     height: 100%;
     background: #00000079;
     z-index: 1;
+}
+
+#page_02 .slogan2 {
+    max-width: 300px;
+    /* margin: auto;
+    margin-bottom: 15px; */
+    margin-left: auto;
+    margin-right: auto;
 }
