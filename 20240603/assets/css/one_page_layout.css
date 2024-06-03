@@ -258,3 +258,24 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+#page_02 {
+    background-image: url(../images/process.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#page_02::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000079;
+    z-index: 1;
+}
