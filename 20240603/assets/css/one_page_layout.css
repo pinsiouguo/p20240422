@@ -54,7 +54,7 @@ body {
 }
 
 .menu>ul a:hover {
-    color: rgb(10, 128, 128);
+    color: rgb(71, 41, 182);
 }
 
 .page {
@@ -91,7 +91,7 @@ body {
 }
 
 #page_01 .page-content {
-    background: rgba(21, 140, 156, 0.87);
+    background: rgba(58, 45, 75, 0.87);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
@@ -182,7 +182,7 @@ body {
 
 .form-item label {
     position: absolute;
-    color: #535353;
+    color: #818640;
     height: 40px;
     display: flex;
     align-items: center;
@@ -236,12 +236,12 @@ body {
 }
 
 .btn.success {
-    background: rgb(14, 172, 85);
+    background: rgb(212, 192, 11);
     color: #fff;
 }
 
 .btn.success:hover {
-    background: rgb(26, 204, 106);
+    background: rgb(184, 172, 4);
 }
 
 .form-wrap {
@@ -321,15 +321,27 @@ body {
     width: 26px;
     height: 26px;
     border-radius: 26px;
-    background: red;
+    background: rgb(206, 204, 104);
+    z-index: 2;
 }
 
 .flow-item .flow-text {
     position: absolute;
     left: calc(50% + 50px);
     padding: 15px;
-    background: #000;
+    background: #7d25af;
     color: #fff;
     border-radius: 8px;
-    min-width: 300px;
+    min-width: 100px;
+}
+
+.flow-item:nth-child(even) .flow-text {
+    left: unset;
+    right: calc(50% + 50px);
+    background: rgb(206, 204, 104);
+    text-align: right;
+}
+
+.flow-item:nth-child(even) .flow-circle {
+    background: #7d25af;
 }
