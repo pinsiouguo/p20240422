@@ -80,7 +80,8 @@ body {
         width: 100%;
         border-bottom-left-radius: 38px;
         border-bottom-right-radius: 38px;
-        padding: 20px;
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 
     #mobile-menu-sw:checked~.menu>ul {
@@ -132,5 +133,16 @@ body {
     .flow-wrap {
         display: grid;
         gap: 40px;
+    }
+
+    .menu>ul>li {
+        border-bottom: 1px solid #7575756c;
+        width: 95%;
+        padding-bottom: 20px;
+    }
+
+    .menu>ul>li:last-child {
+        border: 0;
+        padding-bottom: 0;
     }
 }
