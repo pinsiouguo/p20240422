@@ -110,4 +110,27 @@ body {
         padding-right: 0;
         padding-bottom: 30px;
     }
+
+    .flow-item:nth-child(even) .flow-text {
+        left: 50px;
+        right: unset;
+        text-align: left;
+    }
+
+    .flow-item .flow-text {
+        left: 50px;
+    }
+
+    .flow::before {
+        left: 11px;
+    }
+
+    .flow-item {
+        justify-content: flex-start;
+    }
+
+    .flow-wrap {
+        display: grid;
+        gap: 40px;
+    }
 }
