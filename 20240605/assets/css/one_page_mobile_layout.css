@@ -3,11 +3,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.header-wrap .logo {
-    position: relative;
-    z-index: 2;
-}
-
 .mobile-menu {
     display: none;
 }
@@ -56,6 +51,11 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .logo {
+        position: relative;
+        z-index: 2;
+    }
+
     .mobile-menu {
         width: 100%;
         display: flex;
@@ -74,12 +74,12 @@ body {
     #mobile-menu-sw:checked~.menu {
         display: flex;
         position: absolute;
-        top: 80px;
+        top: 40px;
         left: 0;
         background: #fff;
         width: 100%;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 38px;
+        border-bottom-right-radius: 38px;
         padding: 20px;
     }
 
