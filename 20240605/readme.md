@@ -104,4 +104,23 @@
     top: -7px;
 }
 ```
-##
+### 斷點切換
+
+```css
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .header-wrap .menu {
+        display: none;
+    }
+}
+```
