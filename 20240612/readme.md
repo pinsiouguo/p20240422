@@ -326,8 +326,8 @@ body {
 
 ### 無效範例
 
-- width:auto -> width: 100px
-- display: none -> display:block
+- `width:auto` -> `width: 100px`
+- `display: none` -> `display:block`
 
 `color_change.html`
 
