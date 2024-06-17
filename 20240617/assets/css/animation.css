@@ -48,6 +48,10 @@
     /* left: calc(100% - var(--cube-size)); */
     /* animation-delay: 1500ms; */
     /* 1.5s */
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
 }
 
 
