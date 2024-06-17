@@ -6,10 +6,14 @@
 .fn button {
     padding: 10px 20px;
     border: 0;
-    background: #1145b6;
+    background: #e2ae03;
     color: #fff;
     cursor: pointer;
     transition-duration: 0.5s;
+}
+
+.fn button:hover {
+    background: #cca808;
 }
 
 .wrap {
@@ -20,7 +24,7 @@
 .wrap .item {
     width: 200px;
     height: 50px;
-    background: #000;
+    background: #393d57;
     color: #fff;
     display: flex;
     align-items: center;
