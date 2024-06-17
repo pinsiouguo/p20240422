@@ -22,11 +22,11 @@ body {
     content: '';
     position: absolute;
     background: inherit;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
-    left: 110px;
-    top: -50px;
+    left: 80px;
+    top: -80px;
 }
 
 .cloud::before {
@@ -44,6 +44,7 @@ body {
     top: 500px;
     left: 200px;
     transform: scale(0.8);
+    animation-name: move2;
     animation-duration: 6s;
 }
 
@@ -51,6 +52,7 @@ body {
     top: 800px;
     left: 50px;
     transform: scale(0.5);
+    animation-name: move3;
     animation-duration: 3s;
 }
 
@@ -61,6 +63,26 @@ body {
     }
 
     to {
-        margin-left: 100%;
+        margin-left: calc(100% - 500px - 40px);
+    }
+}
+
+@keyframes move2 {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: calc(100% - 400px - 400px);
+    }
+}
+
+@keyframes move3 {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: calc(100% - 250px - 100px);
     }
 }
