@@ -10,21 +10,21 @@
 .fn button {
     padding: 10px 20px;
     border: 0;
-    background: #828b92;
+    background: #547aa5;
     color: #fff;
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
 .fn button:hover {
-    background: #470188;
+    background: #212155;
 }
 
 .wrap {
     position: relative;
     width: 100%;
     height: 100px;
-    background: red;
+    background: rgb(221, 220, 218);
     display: flex;
     align-items: center;
 }
@@ -33,7 +33,7 @@
     position: relative;
     width: var(--cube-size);
     height: var(--cube-size);
-    background: yellow;
+    background: rgb(23, 88, 126);
     left: 0;
 }
 
