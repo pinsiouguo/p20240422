@@ -8,7 +8,7 @@
 <script src="./assets/js/some.js"></script>
 ```
 
-建議使用
+***建議使用***
 
 ### 元素使用
 
@@ -18,7 +18,7 @@
 </script>
 ```
 
-不建議使用，行數無法對應
+***不建議使用，行數無法對應***
 
 ### 練習
 跳出視窗顯示`1`表示成功
@@ -49,5 +49,43 @@
 
 ```js
 alert(1);
+```
+
+## 變數宣告
+
+- 使用`let`關鍵字宣告
+- 只能使用`_`與英文字母當開頭
+- 只能使用`_`與英文字母與數字組成
+
+### 錯誤示範
+
+```js
+let 5s = 'aaa';
+let -s = 'bbb';
+```
+
+## var與let
+使用let宣告變數，其暫時死區TDZ(Temporal Dead Zone)特性可以幫助程式更穩健。
+
+## 終端機輸出
+
+### 一般輸出
+
+```js
+let fname = 'David';
+console.log(fname);
+```
+
+### 列表輸出
+
+```js
+let nums = [1, 2, 3, 4];
+console.table(nums);
+```
+
+### 特殊格式輸出
+
+```js
+console.log('%c鴨沒肉！！！\n%c我只是亂喊一下啦~', 'color:red;font-size:20px;', 'color:#dedede')
 ```
 
