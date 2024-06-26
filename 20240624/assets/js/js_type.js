@@ -60,4 +60,56 @@ console.log(findIndex);
 students.splice(findIndex, 1);
 
 
-console.log(students)
+let student_name = 'David';
+let student_age = 18;
+let student_score = 100;
+
+
+let student = {
+    name: 'David',
+    age: 18,
+    score: 100
+};
+
+
+// function calcAVG(student) {
+
+// }
+
+/**
+ * calc student score avg.
+ * @param {object} student 
+ */
+const calcAVG = (student, offset) => {
+    offset = offset || 0;
+    let total = student.s1 + student.s2
+    let avg = total / 2;
+    return avg + offset;
+};
+
+let appedu_students = [];
+
+appedu_students.push({
+    name: 'David',
+    city: '台中',
+    gender: '男',
+    s1: 100,
+    s2: 80
+});
+
+appedu_students.push({
+    name: 'Helen',
+    city: '高雄',
+    gender: '女',
+    s1: 70,
+    s2: 99
+});
+
+console.log(appedu_students)
+console.table(appedu_students)
+
+console.log(calcAVG);
+
+appedu_students[0].avg = calcAVG(appedu_students[0])
+appedu_students[1].avg = calcAVG(appedu_students[1], 5)
+console.table(appedu_students);

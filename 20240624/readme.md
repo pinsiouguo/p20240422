@@ -193,3 +193,70 @@ students.splice(findIndex, num);
 - findIndex 從第幾個索引
 - num 砍幾個
 - findIndex 為負數時，從後面推算
+
+### 物件
+
+- 定義資料結構
+- 可與陣列合併使用，呈現資料庫結構
+
+```js
+let appedu_students = [];
+
+appedu_students.push({
+    name: 'David',
+    city: '台中',
+    gender: '男'
+});
+
+appedu_students.push({
+    name: 'Helen',
+    city: '高雄',
+    gender: '女'
+});
+
+console.table(appedu_students)
+```
+
+### 函數
+
+- 函數名稱也是一種變數
+- 建議使用`const`常數宣告，可避免複寫問題
+
+```js
+/**
+ * calc student score avg.
+ * @param {object} student 
+ */
+const calcAVG = (student, offset) => {
+    offset = offset || 0;
+    let total = student.s1 + student.s2
+    let avg = total / 2;
+    return avg + offset;
+};
+
+let appedu_students = [];
+
+appedu_students.push({
+    name: 'David',
+    city: '台中',
+    gender: '男',
+    s1: 100,
+    s2: 80
+});
+
+appedu_students.push({
+    name: 'Helen',
+    city: '高雄',
+    gender: '女',
+    s1: 70,
+    s2: 99
+});
+
+console.log(appedu_students)
+console.table(appedu_students)
+
+appedu_students[0].avg = calcAVG(appedu_students[0])
+appedu_students[1].avg = calcAVG(appedu_students[1], 5)
+console.table(appedu_students);
+```
+
