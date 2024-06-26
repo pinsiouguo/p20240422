@@ -4,8 +4,15 @@ let responseBlock = document.querySelector('#response');
 
 const sayHi = () => {
     let name = usernameInput.value;
-    let message = `Hi, ${name}.`;
-    responseBlock.innerHTML = message;
+    if (name) {
+        let message = `Hi, ${name}.`;
+        responseBlock.innerHTML = message;
+        usernameInput.value = '';
+    } else {
+        alert('Input your name');
+    }
+
+    usernameInput.focus();
 }
 
 sayBtn.addEventListener('click', sayHi)
