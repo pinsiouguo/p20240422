@@ -94,3 +94,42 @@ export { TodoAPI }
 
 `todo.html`
 `todo.js`
+
+## Vuejs 初始化
+
+https://vuejs.org/guide/quick-start.html
+
+正式
+
+```js
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+```
+
+開發
+
+```js
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+```
+
+## Vuejs 掛載
+
+`vue_app.html`
+`assers/js/vue/todo.js`
+
+```js
+const options = {
+    data() {
+        return {
+            user: 'David'
+        }
+    },
+    methods: {
+
+    },
+    mounted() {
+        console.log('is mounted.');
+    }
+};
+
+Vue.createApp(options).mount('#todo-app');
+```
